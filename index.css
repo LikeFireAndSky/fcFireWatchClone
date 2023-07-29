@@ -1,0 +1,129 @@
+
+header {
+    display: flex;
+    align-items: center;
+    height: 34px;
+    background-color: #04120c;
+    color: #b8e1ee;
+    justify-content: space-between;
+}
+
+a{
+    color: unset;
+    text-decoration: none;
+}
+
+.button-in-header{
+    padding: 10px;
+    font-weight: 700;
+    height: 34px;
+    box-sizing: border-box;
+}
+
+.button-in-header:hover{
+    cursor: pointer;
+    background-color: #127374;
+    color: #fff;
+}
+
+body {
+    height: 200vh;
+    background-color: #04120c;
+    position: relative;
+}
+
+#right-buttons {
+    display: flex;
+}
+
+#active-menu {
+    background-color: #013a3b;
+}
+
+#image-wrapper {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#main-image {
+    min-width: 1000px;
+}
+
+.under-ground {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    bottom: 30rem;
+    color: #fff;
+    line-height: 2rem;
+    padding-bottom: 3rem;
+    font-size: larger;
+}
+
+#main-content-wrapper {
+    margin-top: 50px;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#document-title {
+    color: #b8e1ee;
+    font-size: 170%;
+    font-weight: 300;
+    letter-spacing: 10px;
+    margin-bottom: 40px;
+}
+
+#mountain-tag-wrapper {
+    display: flex;
+    font-weight: 700;
+    font-size: 18px;
+    gap: 50px;
+    flex-direction: column;
+}
+
+@media (min-width : 768px) {
+    #mountain-tag-wrapper {
+        flex-direction: row;
+    }
+}
+    
+
+.mountain-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.mountain-content-list {
+    display: flex;
+    align-items: center;
+    width: 325px;
+    height: 32px;
+    justify-content: center;
+    background-color: #b8e1ee;
+    color: #04120c;
+}
+
+.long-text {
+    display: none;
+}
+
+.short-text {
+    display: inline;
+}
+
+@media (min-width : 768px) {
+    .long-text {
+        display: block;
+    }
+    .short-text {
+        display: none;
+    }
+}
+    
